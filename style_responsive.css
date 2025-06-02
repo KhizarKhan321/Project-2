@@ -537,3 +537,58 @@ body {
 .page14-inner:hover .center14 {
     height: 100%;
 }
+
+/* ----------- Responsive CSS ----------- */
+
+/* Mobile devices */
+@media (max-width: 600px) {
+    body {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    #main {
+        padding: 10px;
+        overflow-x: hidden;
+    }
+
+    .page1, .page2, .page3 {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+
+    .text-section, .image-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/* Tablet devices */
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.1rem;
+    }
+}
